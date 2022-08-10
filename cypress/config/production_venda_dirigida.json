@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://loja.333obra.com.br/esquina",
+    "env": {
+        "enviroment": "production_venda_dirigida"
+    }
+}

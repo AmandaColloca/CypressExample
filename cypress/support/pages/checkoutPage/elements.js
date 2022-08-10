@@ -1,0 +1,46 @@
+export const ELEMENTS = {
+    finishOrderButton: '#shipping-method-buttons-container > div.primary > .button > span',
+        // '#shipping-method-buttons-container button[class="button action continue primary"]'
+        // '#shipping-method-buttons-container > div.primary > .button'
+        // '#shipping-method-buttons-container > div > button > span'
+        // '#shipping-method-buttons-container > div.primary > .button > span'
+        // button[class="button action continue primary"]
+    cheaperSelectQuotationButton: 'div[class="primary"] button[class="cheaper button primary action"]',
+    fasterDeliverySelectQuotationButton: 'div[class="primary"] button[class="faster_delivery button primary action"]',
+    bestRatedSelectQuotationButton: 'div[class="primary"] button[class="best_rated button primary action"]',
+    combinedPriceSelectQuotationButton: 'div[class="primary"] button[class="combined_price button primary action"]',
+    shippingStepTitle: 'li[id="shipping"] div[class="step-title"]',
+    emailField: 'div [class="control _with-tooltip"] #customer-email',
+    passwordField: 'input[id="customer-password"]',
+    submitLoginButton:'button[data-action="checkout-method-login"]',
+    customerNameLogged: 'input[class="bpmpi_shipto_addressee"]',
+    personTypeSelect: 'select[name="custom_attributes[person_type]"]',
+    cpfField: 'input[name="custom_attributes[taxvat]"]',
+    nameField: 'input[name="firstname"]',
+    lastNameField: 'input[name="lastname"]',
+    telephoneField: 'input[name="telephone"]',
+    loaderGif: '.loader > img',
+    paymentStepTitle: 'div[class="payment-group"] div[class="step-title"]',
+    boletoRadio: '#braspag_pagador_boleto',
+    creditCardRadio: '#braspag_pagador_creditcard',
+    cashOnDeliveryRadio: '#cashondelivery',
+    ccNumberField: 'input[data-container="braspag_pagador_creditcard-cc-number"]',
+    ccOwnerField: 'input[data-container="braspag_pagador_creditcard-cc-owner"]',
+    ccMonthField: 'select[data-container="braspag_pagador_creditcard-cc-month"]',
+    ccYearField: 'select[data-container="braspag_pagador_creditcard-cc-year"]',
+    ccCvvField: 'input[data-container="braspag_pagador_creditcard-cc-cvv"]',
+    ccInstalmentsSelect: 'select[data-container="braspag_pagador_creditcard-cc-installments"]',
+    placeOrderButton: '#checkout-payment-method-load > div > div > div.payment-method._active > div.payment-method-content > div.actions-toolbar > div > button',
+    sucessfulMessageTitle: 'span[data-ui-id="page-title-wrapper"]',
+    emailRegisteredMessage: 'div[class="control"] span[class="note"]',
+    sellerNameCheaperQuotation: 'div[id="cheaper"] span[data-bind="text: seller_name"]',
+    sellerNameFasterDeliveryQuotation: 'div[id="faster_delivery"] span[data-bind="text: seller_name"]',
+    sellerNameBestRatedQuotation: 'div[id="best_rated"] span[data-bind="text: seller_name"]',
+    sellerNameCombinedPriceQuotation: 'div[id="combined_price"] span[data-bind="text: seller_name"]',
+    cupomOpen: 'span[id="block-discount-heading"]',
+    cupomField: 'input[id="discount-code"]',
+    cupomSubmit: 'button[class="action primary action-apply"]',
+    cupomMessage: 'div[data-ui-id="checkout-cart-validationmessages-message-success"]',
+    cupomSummary: 'th[class="mark"] span[data-bind="text: getTitle()"]',
+    cupomAmount: 'tr[class="totals discount"] td[class="amount"] span[class="price"]'
+}

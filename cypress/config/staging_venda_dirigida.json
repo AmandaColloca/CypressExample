@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://mcstaging-loja.333obra.com.br/jun1",
+    "env": {
+        "enviroment": "staging_venda_dirigida"
+    }
+}

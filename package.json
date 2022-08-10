@@ -1,0 +1,62 @@
+{
+  "name": "automation-tests-front-master",
+  "version": "1.0.0",
+  "description": "333OBRA Automation",
+  "main": "index.js",
+  "scripts": { 
+    "------STAGING------": "------STAGING------",
+    "------OPEN------": "------OPEN------",
+    "cy:open:stg_mktp": "cypress open",
+    "cy:open:stg_vd": "cypress open --env configFile=staging_venda_dirigida",
+
+    "------HEADLESS------": "------HEADLESS------",
+    "------MARKETPLACE------": "------MARKETPLACE------",
+    "cy:run:stg_mktp:report": "cypress run --env allure=true,grepTags='marketplace',grepOmitFiltered=true",
+    "cy:run:stg_mktp:E2E:report": "cypress run --env allure=true,grepTags='e2e+marketplace',grepOmitFiltered=true",
+    "cy:run:stg_mktp:LANDING:report": "cypress run --env allure=true,grepTags='landingpage+marketplace',grepOmitFiltered=true",
+    "cy:run:stg_mktp:LOGIN:report": "cypress run --env allure=true,grepTags='login+marketplace',grepOmitFiltered=true",
+    "cy:run:stg_mktp:ACCOUNT:report": "cypress run --env allure=true,grepTags='account+marketplace',grepOmitFiltered=true",
+    "cy:run:stg_mktp:CART:report": "cypress run --env allure=true,grepTags='cart+marketplace',grepOmitFiltered=true",
+    "cy:run:stg_mktp:MINICART:report": "cypress run --env allure=true,grepTags='miniCart+marketplace',grepOmitFiltered=true",
+    "------SMOKE TEST - Marketplace------": "------SMOKE TEST - Marketplace------",
+    "cy:run:stg_mktp:SMOKETEST:report": "cypress run --env allure=true,grepTags='marketplace+smoke',grepOmitFiltered=true",
+
+    "------VENDA DIRIGIDA------": "------VENDA DIRIGIDA------",
+    "cy:run:stg_vd:report": "cypress run --env configFile=staging_venda_dirigida,allure=true,grepTags='vendaDirigida',grepOmitFiltered=true",
+    "cy:run:stg_vd:E2E:report": "cypress run --env configFile=staging_venda_dirigida,allure=true,grepTags='e2e+vendaDirigida',grepOmitFiltered=true",
+    "cy:run:stg_vd:LOGIN:report": "cypress run --env configFile=staging_venda_dirigida,allure=true,grepTags='login+vendaDirigida',grepOmitFiltered=true",
+    "cy:run:stg_vd:ACCOUNT:report": "cypress run --env configFile=staging_venda_dirigida,allure=true,grepTags='account+vendaDirigida',grepOmitFiltered=true",
+    "cy:run:stg_vd:CART:report": "cypress run --env configFile=staging_venda_dirigida,allure=true,grepTags='cart+vendaDirigida',grepOmitFiltered=true",
+    "cy:run:stg_vd:MINICART:report": "cypress run --env configFile=staging_venda_dirigida,allure=true,grepTags='miniCart+vendaDirigida',grepOmitFiltered=true",
+    "------SMOKE TEST - Venda Dirigida------": "------SMOKE TEST - Venda Dirigida------",
+    "cy:run:stg_vd:SMOKETEST:report": "cypress run --env allure=true,grepTags='vendaDirigida+smoke',grepOmitFiltered=true",
+
+    "------PRODUCTION------": "------PRODUCTION------",
+    "cy:open:prod_mktp": "cypress open --env configFile=production_marketplace",
+    "cy:open:prod_vd": "cypress open --env configFile=production_venda_dirigida",
+    "cy:run:prod_mktp:report": "cypress run --env configFile=production_marketplace,allure=true,grepTags='marketplace',grepOmitFiltered=true",
+    "cy:run:prod_vd:report": "cypress run --env configFile=production_venda_dirigida,allure=true,grepTags='marketplace',grepOmitFiltered=true",
+    
+    "------REPORT------": "------REPORT------",
+    "allure:generate": "allure generate allure-results",
+    "allure:open": "allure open allure-report",
+    "allure:clear": "rm -r allure-results/ allure-report/ allure-report-complete /|| true",
+    "report:combine": "allure-combine allure-report --dest allure-report-complete --auto-create-folders",
+    "report:combine:clear": "allure-combine allure-report --remove-temp-files"
+  },
+  "keywords": [
+    "333OBRA"
+  ],
+  "author": "Emmanuel Emiliano Buccheri",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.3.0",
+    "@shelex/cypress-allure-plugin": "^2.26.5",
+    "cypress": "^9.7.0",
+    "cypress-grep": "^2.14.0",
+    "cypress-plugin-tab": "^1.0.5",
+    "cypress-real-events": "^1.7.1",
+    "faker-br": "^0.4.1",
+    "gerador-validador-cpf": "^5.0.2"
+  }
+}

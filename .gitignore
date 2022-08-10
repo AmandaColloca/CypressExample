@@ -1,0 +1,6 @@
+cypress/screenshots/
+cypress/videos/
+node_modules/
+allure-results/
+allure-report/
+allure-report-complete/

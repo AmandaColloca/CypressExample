@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://mcstaging.333obra.com.br",
+    "env": {
+        "enviroment": "staging_marketplace"
+    }
+}
